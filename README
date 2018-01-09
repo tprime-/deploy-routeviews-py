@@ -1,0 +1,11 @@
+deploy-routeviews-py
+
+A script to quickly deploy routeviews-py on a Linux machine. Simply specify which ASNs should be monitored. deploy-routeviews-py will:
+-Download the latest copy of routeviews-py
+-Update your crontab appropriately
+-Create a PHP file which uses Highcharts to visualize the BGP data
+
+This script can be used to quickly setup BGP monitoring on specific ASNs when internet censorship via BGP manipulation is suspected.
+
+Usage: ./deploy-routeviews-py.sh 123,456,789 (comma-seperated ASNs)
+Installation will occur in the current directory.
